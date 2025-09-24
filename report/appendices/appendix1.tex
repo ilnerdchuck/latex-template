@@ -1,0 +1,20 @@
+%%% Appendix A
+\chapter{Code Section}\label{Code_Section}
+
+\section{Code 1}\label{Code_1}
+	\subsection{File 1}
+	This is a file code example:
+	\inputminted[breaklines]{c}{./appendices/files/example.c}
+	
+	This is a block code example:
+
+	\begin{minted}{c}
+#include <stdio.h>
+
+int main() {
+	printf("Hello, World!\n");
+	return 0;
+}
+	\end{minted}
+
+this is an inline code example: \mintinline{c}|printf("Hello, World!\n");|
