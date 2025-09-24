@@ -1,0 +1,102 @@
+% This template is released under \hrefcol{https://creativecommons.org/licenses/by-nc/4.0/legalcode}{Creative Commons CC BY 4.0} license
+\documentclass{beamer}
+\usepackage{amsfonts,amsmath,oldgerm}
+\usetheme{sintef}
+\usepackage{graphicx}
+\usepackage{minted}
+
+\newcommand{\testcolor}[1]{\colorbox{#1}{\textcolor{#1}{test}}~\texttt{#1}}
+
+\usefonttheme[onlymath]{serif}
+
+\titlebackground*{assets/cat.png}
+% \titlebackground*{assets/background}
+
+\newcommand{\hrefcol}[2]{\textcolor{cyan}{\href{#1}{#2}}}
+
+\title{Title: title}
+\subtitle{Subtitle}
+\course{Master's Degree in Title: Title}
+\author{Mario Rossi} 
+
+\begin{document}
+\maketitle
+
+
+%% Slide Example 
+\begin{frame}
+
+Blank slide example
+
+\vspace{\baselineskip}
+
+
+
+\end{frame}
+
+
+%% New section example
+
+\section{Section 1}
+
+\begin{frame}{Slide 1}
+
+    The main goals of this project are:
+    \begin{itemize}
+        \item Item 1
+        \item Item 2
+        \item Item 3
+    \end{itemize}
+\end{frame}
+
+
+
+\section{Section 2}
+
+
+\begin{frame}[fragile]{Slide with image}
+    \begin{columns}
+    \begin{column}{0.6\textwidth}
+        Column slide example
+    \end{column}
+    \begin{column}{0.4\textwidth}
+            \includegraphics[width=\textwidth]{assets/cat.png}
+    \end{column}
+    \end{columns}
+\end{frame}
+
+\section{Section 3}
+
+
+
+\begin{frame}[fragile]{Code slide example}
+    \begin{columns}
+        \begin{column}{0.5\textwidth}
+            Description of the code
+        \end{column}
+        \begin{column}{0.5\textwidth}
+            \begin{block}{Code Example}
+                    \begin{footnotesize}
+                        \begin{verbatim}
+#include <stdio.h>
+
+int main() {
+    printf("Hello, World!\n");
+    return 0;
+}
+                        \end{verbatim}
+                    \end{footnotesize}
+            \end{block}
+        \end{column}
+    \end{columns}
+\end{frame}
+
+
+\section{Final Section}
+
+\begin{frame}
+\frametitle{Conclusions}
+\end{frame}
+
+\backmatter
+\end{document}
